@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="jquery-3.1.0.min.js"></script>
+    <script src="popup.js"></script>   
+    <!--<script src='https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.12.10/xlsx.full.min.js'></script>-->
+
+    <style>
+        body {
+            min-width: 240px;
+            min-height: 150px;
+            margin:0px;
+        }
+
+        /* input {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            height: 20%;
+        } */
+
+            input[type=button] {
+                width: 100%;
+                background-color: #2d1e3b;
+                color: white;
+                padding: 10px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                height: 20%;
+            }
+
+                input[type=button]:hover {
+                    background-color: #C06C84;
+                }
+
+        div {
+            border-radius: 5px;
+            background-color: #C06C84;
+            padding: 20px;
+            height: 170px;
+            background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);
+        }
+        span {
+            color: white;
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>Udemy Time tracking</h2>
+        <span id="hours">00</span><span>:</span><span id="minutes">00</span><span>:</span><span id="seconds">00</span>      
+       
+        <label>
+            <input id="pauseCheckBox" type="checkbox" > Pause
+         </label>
+        <input type="button" id="btnReset" value="Reset" />    
+
+    </div>
+
+    <!--<input type="file" name="file-input" id="urltext" value="" class="file validate[required]">-->
+
+</body>
+</html>
