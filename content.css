@@ -1,0 +1,64 @@
+body {
+    min-width: 350px;
+    min-height: 150px;
+    margin: 0px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+    input[type=submit] {
+        width: 100%;
+        background-color: #2d1e3b;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+        input[type=submit]:hover {
+            background-color: #C06C84;
+        }
+
+#maindiv {
+    border-radius: 5px;
+    background-color: #C06C84;
+    padding: 20px;
+    height: 560px;
+    background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);
+}
+
+
+/*-----------------------------------------------------*/
+
+.orderingMethods {
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #999;
+    transition: 0.2s all linear;
+    outline: none;
+    margin-right: 5px;
+    position: relative;
+    top: 4px;
+}
+
+    .orderingMethods:checked {
+        border: 6px solid black;
+    }
+
+    .orderingMethods:hover,
+    label:hover {
+        cursor: pointer;
+    }
